@@ -1,0 +1,103 @@
+Script started on Wed 05 Nov 2014 09:58:58 AM EST
+bash: /home/aryaa/.bashrc: line 114: syntax error: unexpected end of file
+]0;aryaa@aryaa-PC: ~/Downloads/HW2/HW2_TEAMBaryaa@aryaa-PC:~/Downloads/HW2/HW2_TEAMB$ ./client 192.168.1.1
+client: connecting to 192.168.1.1
+login: admin
+password: asd
+Invalid identity
+login: admin  
+password: admin
+Welcome to the machine
+
+$ ls
+badbuf
+boxes
+hello
+hello_drone
+io
+names.txt
+out.txt
+police-notice.html.gz
+restore.sh
+server
+server.txt
+start.sh
+test
+
+$ pwd
+/data/video
+
+$ cat names.txt
+adid,aditya
+admin,admin
+aditya,aditya
+ad,11
+
+$ iptables --list
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+ACCEPT     tcp  --  anywhere             anywhere             tcp dpt:10551
+DROP       all  --  anywhere             anywhere            
+DROP       tcp  --  anywhere             anywhere             tcp dpt:10551 STRING match  "6ipu6zo" ALGO name kmp TO 65535
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+$ add mac address
+Enter Mac Address:80:86:f2:89:3d:ed
+Enter Port:23
+MAC address coupled successfully
+$ iptables --list
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+ACCEPT     tcp  --  anywhere             anywhere             tcp dpt:23 MAC 80:86:F2:89:3D:ED
+ACCEPT     tcp  --  anywhere             anywhere             tcp dpt:10551
+DROP       all  --  anywhere             anywhere            
+DROP       tcp  --  anywhere             anywhere             tcp dpt:10551 STRING match  "6ipu6zo" ALGO name kmp TO 65535
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+$ delete mac address
+Enter Mac Address:80:86:f2:89:3d:ed
+Enter Port:23
+mac address decoupled successfully
+$ iptables --list
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+ACCEPT     tcp  --  anywhere             anywhere             tcp dpt:10551
+DROP       all  --  anywhere             anywhere            
+DROP       tcp  --  anywhere             anywhere             tcp dpt:10551 STRING match  "6ipu6zo" ALGO name kmp TO 65535
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+$ add user
+username: admin
+password: asdf
+User already present
+$ add user
+username: aryaa
+password: gautam
+Successfully added the user
+$ cat names.txt
+adid,aditya
+admin,admin
+aditya,aditya
+ad,11
+aryaa,gautam
+
+$ quit
+]0;aryaa@aryaa-PC: ~/Downloads/HW2/HW2_TEAMBaryaa@aryaa-PC:~/Downloads/HW2/HW2_TEAMB$ exit
+exit
+
+Script done on Wed 05 Nov 2014 10:02:41 AM EST

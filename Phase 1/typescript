@@ -1,0 +1,60 @@
+Script started on Tue 21 Oct 2014 02:56:27 PM EDT
+wudi5@spec06:~/CIS551/HW2/hw2/hw2> ./client 127.0.01[K.1
+client: connecting to 127.0.0.1
+login: admin
+password: admin
+Welcome to the machine
+1 - add user
+2 - update password
+3 - display list
+4 - execute shell
+5 - quit
+1
+username: testuser
+password: 123
+Successfully added the user
+1 - add user
+2 - update password
+3 - display list
+4 - execute shell
+5 - quit
+2
+new password: 123
+Successfully updated the password
+1 - add user
+2 - update password
+3 - display list
+4 - execute shell
+5 - quit
+5
+wudi5@spec06:~/CIS551/HW2/hw2/hw2> ./client 127.0.0.1
+client: connecting to 127.0.0.1
+login: admin
+password: 123
+Welcome to the machine
+1 - add user
+2 - update password
+3 - display list
+4 - execute shell
+5 - quit
+5
+wudi5@spec06:~/CIS551/HW2/hw2/hw2> ./client 127.0.0.1
+client: connecting to 127.0.0.1
+login: testuser
+password: 123
+Welcome to the machine
+1 - add user
+2 - update password
+3 - display list
+4 - execute shell
+5 - quit
+5
+wudi5@spec06:~/CIS551/HW2/hw2/hw2> ./client 127.0.0.1
+client: connecting to 127.0.0.1
+login: ab
+password: a
+Invalid identity
+wudi5@spec06:~/CIS551/HW2/hw2/hw2> exit
+exit
+
+Script done on Tue 21 Oct 2014 02:58:05 PM EDT

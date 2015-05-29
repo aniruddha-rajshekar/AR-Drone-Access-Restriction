@@ -1,0 +1,28 @@
+Script started on Wed 05 Nov 2014 09:59:59 AM EST
+bash: /home/aryaa/.bashrc: line 114: syntax error: unexpected end of file
+]0;aryaa@aryaa-PC: ~aryaa@aryaa-PC:~$ telb[Knet 192.168.1.1
+Trying 192.168.1.1...
+^C
+]0;aryaa@aryaa-PC: ~aryaa@aryaa-PC:~$ telnet 912.168.1.1
+telnet: could not resolve 912.168.1.1/telnet: Name or service not known
+]0;aryaa@aryaa-PC: ~aryaa@aryaa-PC:~$ telnet 912.168.1.1[1P12.168.1.1[C92.168.1.1
+Trying 192.168.1.1...
+Connected to 192.168.1.1.
+Escape character is '^]'.
+
+
+
+BusyBox v1.14.0 () built-in shell (ash)
+Enter 'help' for a list of built-in commands.
+
+# quit
+/bin/sh: quit: not found
+# exit
+Connection closed by foreign host.
+]0;aryaa@aryaa-PC: ~aryaa@aryaa-PC:~$ telnet 192.168.1.1
+Trying 192.168.1.1...
+^C
+]0;aryaa@aryaa-PC: ~aryaa@aryaa-PC:~$ exit
+exit
+
+Script done on Wed 05 Nov 2014 10:02:44 AM EST
